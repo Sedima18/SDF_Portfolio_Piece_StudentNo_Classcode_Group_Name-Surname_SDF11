@@ -24,67 +24,70 @@
     <link rel="stylesheet" href="./assets/css/loopple/loopple.css">
 </head>
 
-<body class="bg-grey-100">
+<body class="bg-grey-700">
     <div>
      <!--Component 1-->
+     <div class=" mx-auto bg-white">
      <div class="relative flex-wrap items-center justify-between w-full shrink">
       <!-- Logo Section -->
       <div class="px-4">
         <img class="h-8" src="assets/component-1/navigation/cache-bank-logo.png" alt="Logo">
       </div>
-    
+      </div>
       <!-- Navigation Links for Desktop -->
-      <div class="hidden md:flex items-center justify-between text-black gap-12">
-        <a class="text-sm text-normal text-dark-grey-700 hover:text-dark-grey-900" href="#">Product</a>
-        <a class="text-sm text-normal text-dark-grey-700 hover:text-dark-grey-900" href="#">Features</a>
-        <a class="text-sm text-normal text-dark-grey-700 hover:text-dark-grey-900" href="#">Get started</a>
-        <a class="text-sm text-normal text-dark-grey-700 hover:text-dark-grey-900" href="#">Contact</a>
+      <div class="md:flex items-center justify-between text-black gap-4">
+        <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="#">Product</a>
+        <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="#">Features</a>    
+        <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="#">Get started</a>
+        <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="#">Contact</a>
       </div>
-    
-      <!-- Login/Signup Buttons for Desktop -->
-      <div class="gap-8 g-4 items-center md:flex">
-        <button class="text-sm font-normal text-dark-grey-800 hover:text-dark-grey-900">
-          Log in
-        </button>
-        <button class="px-4 py-2 text-sm font-bold text-white bg-green-500 rounded-xl hover:bg-pink-500">
-          Sign Up
-        </button>
-      </div>
-    
-      <!-- Hamburger Icon for Mobile -->
-      <button id="hamburger" class="md:hidden flex items-center text-dark-grey-900">
-        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
-          <g clip-path="url(#clip0)">
-            <path d="M3 6.00092H21M3 12.0009H21M3 18.0009H21" stroke="#292929" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-          </g>
-          <defs>
-            <clipPath id="clip0">
-              <rect width="24" height="24" fill="white" transform="translate(0 0.000915527)" />
-            </clipPath>
-          </defs>
-        </svg>
+
+    <div class=" gap-8 p-4 items-center md:flex">
+      <button class="text-sm font-normal text-dark-grey-800 hover:text-dark-grey-900">Log in</button>
+      <button class=" px-4 py-2 text-sm font-bold text-blue bg-green-500 rounded-xl hover:bg-pink-500">Sign-Up</button>
+      <button class="p-4 md:hidden" id="mobile-menu- toggle">
+        <svg
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        class="h-6 w-6"
+        fill="none"
+        >
+        <g clip-path="url(#clip0_429_11066)">
+          <path
+            d="M3 6.00092H21M3 12.0009H21M3 18.0009H21"
+            stroke="#292929"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_429_11066">
+            <rect
+              width="24"
+              height="24"
+              fill="white"
+              transform="translate(0 0.000915527)"
+            />
+          </clipPath>
+        </defs>
+      </svg>
       </button>
-    
-      <!-- Mobile Navigation Menu -->
-      <div id="mobileMenu" class="absolute flex md:hidden flex-col items-start shadow-main justify-center w-full gap-1 overflow-hidden bg-white max-h-0 top-full transition-all duration-300">
-        <a class="text-sm text-dark-grey-700 hover:text-dark-grey-900 p-4" href="#">Product</a>
-        <a class="text-sm text-dark-grey-700 hover:text-dark-grey-900 p-4" href="#">Features</a>
-        <a class="text-sm text-dark-grey-700 hover:text-dark-grey-900 p-4" href="#">Get started</a>
-        <a class="text-sm text-dark-grey-700 hover:text-dark-grey-900 p-4" href="#">Contact</a>
+      <div class="absolute md:hidden flex md:flex-col item-start items-center w-full gap-3  overflow:hidden bg-white max-h-screen to-full px-4 py-4 shadow-main" id="mobile-menu"> 
+      <div class="md:flex    items-center justify-between text-black gap-12">
+        <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="#">Product</a>
+        <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="#">Features</a>    
+        <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="#">Get started</a>
+        <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="#">Contact</a>
       </div>
-    </div>
-    
-    <script>
-      // JavaScript to toggle the mobile menu visibility
-      const hamburger = document.getElementById('hamburger');
-      const mobileMenu = document.getElementById('mobileMenu');
-      
-      hamburger.addEventListener('click', () => {
-        mobileMenu.classList.toggle('max-h-0');  // Toggle visibility by adjusting height
-        mobileMenu.classList.toggle('max-h-96'); // Expand to show the menu
-      });
-    </script>
-        
+ 
+    <div class="gap-8 p-4 items-center md:flex">
+      <button class="text-sm font-normal text-dark-grey-800 hover:text-dark-grey-900">Log in</button>
+      <button class=" px-4 py-2 text-sm font-bold text-blue bg-green-500 rounded-xl hover:bg-pink-500">Sign-Up</button>
+       </div> 
+       </div>
+       </div>
     <!--Component 2:Hero Endorsements-->
     <!--HERO-->
     <section class="grid w-full grid-cols-1 my-auto mt-12 mb-8 md:grid-cols-2 xl:gap-14 md:gap-5">
@@ -361,115 +364,114 @@ collaboration, and sharing insights within the software development industry
 </p>
 </div>
 </div>
+    </div>
 
-<!--Components 4-->
-<!--STATS-->
-<div class="grid w-full">
-  <div class="flex flex-col items-center">
-    <!-- Statistic Blocks -->
-    <div class="flex flex-col lg:flex-row lg:justify-center gap-12 items-center">
-      <!-- Block 1 -->
+    <!--Componet 4-->
+    <!--stats-->
+    <div class="grid w-full">
       <div class="flex flex-col items-center">
-        <h3 class="text-5xl font-extrabold leading-tight text-center text-dark-grey-900">
-          <span id="countto1" countto="250">250</span>k+
-        </h3>
-        <p class="text-base font-medium leading-7 text-dark-grey-600">Hours Saved in the Bank</p>
-      </div>
-
-      <!-- Block 2 -->
-      <div class="flex flex-col items-center">
-        <h3 class="text-5xl font-extrabold leading-tight text-center text-dark-grey-900">
-          <span id="countto2" countto="12">12</span>m
-        </h3>
-        <p class="text-base font-medium leading-7 text-dark-grey-600">Cache Saved</p>
-      </div>
-
-      <!-- Block 3 -->
-      <div class="flex flex-col items-center">
-        <h3 class="text-5xl font-extrabold leading-tight text-center text-dark-grey-900">
-          <span id="countto3" countto="2600" data-decimal="1">2.8</span>k
-        </h3>
-        <p class="text-base font-medium leading-7 text-dark-grey-600">Global Partners</p>
-      </div>
-
-      <!-- Block 4 -->
-      <div class="flex flex-col items-center">
-        <h3 class="text-5xl font-extrabold leading-tight text-center text-dark-grey-900">
-          <span id="countto4" countto="18000">18,000</span>+
-        </h3>
-        <p class="text-base font-medium leading-7 text-dark-grey-600">Happy Developers</p>
+        <!-- Statistic Blocks -->
+        <div class="flex flex-col lg:flex-row lg:justify-center gap-32 items-center">
+          <!-- Block 1 -->
+          <div class="flex flex-col items-center">
+            <h3 class="text-5xl font-extrabold leading-tight text-center text-dark-grey-900">
+              <span id="countto1" countto="250">250</span>k+
+            </h3>
+            <p class="text-base font-medium leading-7 text-dark-grey-600">Hours Saved in the Bank</p>
+          </div>
+    
+          <!-- Block 2 -->
+          <div class="flex flex-col items-center">
+            <h3 class="text-5xl font-extrabold leading-tight text-center text-dark-grey-900">
+              <span id="countto2" countto="12">12</span>m
+            </h3>
+            <p class="text-base font-medium leading-7 text-dark-grey-600">Cache Saved</p>
+          </div>
+    
+          <!-- Block 3 -->
+          <div class="flex flex-col items-center">
+            <h3 class="text-5xl font-extrabold leading-tight text-center text-dark-grey-900">
+              <span id="countto3" countto="2600" data-decimal="1">2.8</span>k
+            </h3>
+            <p class="text-base font-medium leading-7 text-dark-grey-600">Global Partners</p>
+          </div>
+    
+          <!-- Block 4 -->
+          <div class="flex flex-col items-center">
+            <h3 class="text-5xl font-extrabold leading-tight text-center text-dark-grey-900">
+              <span id="countto4" countto="18000">18,000</span>+
+            </h3>
+            <p class="text-base font-medium leading-7 text-dark-grey-600">Happy Developers</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-
-  <!-- getting started-->
-  <div class="">
-    <!-- Image on the left-->
- <div class="">
-  <img class="" src="assets/component-4/getting-started.png" alt="getting-started image">
-</div>
-  <!-- Text content on the right -->
-  <div class="">
-    <h2 class="text-3xl font-extrabold md:text-4xl lg:text-5xl text-dark-grey-900">
-      <span style="border-color: rgb(217, 217, 227);"></span>How Cache Works?
-    </h2>
-    <p class="text-base font-medium leading-7 text-dark-grey-600">
-      <span style="color: rgb(55,65,81); font-family: 'Sonhe', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
-        Cache Bank simplifies sign-up with a user-friendly website, streamlined account options, and an efficient verification process, making banking accessible and hassle-free for developers.
-      </span>
-    </p>
-  </div>
-
-  <!-- Steps Section with Numbered Circles -->
-
-    <div class="">
-      <div class=" rounded-full bg-pink-500 mb-2">
-        <span class="text-base font-bold leading-7 text-white">1</span>
-      </div>
-      <h3 class="text-lg font-semibold text-dark-grey-900">Visit Cache Bank Website</h3>
-      <p class="text-base font-medium text-dark-grey-600">
-        Go to Cache Bank,click "Sign-Up" or "Open an Account."
-      </p>
+    
+      <!-- getting started-->
+      <div class="grid w-full">
+        <!-- Image on the left-->
+     <div class="items-center justify content-start col-span-1 md:flex">
+      <img class="object-left w-2/4 ml-4" src="assets/component-4/getting-started.png" alt="getting-started image">
     </div>
-
-    <div class="">
-      <div class=" rounded-full bg-pink-500 mb-2">
-        <span class="text-base font-bold leading-7 text-white">2</span>
+      <!-- Text content on the right -->
+        <div class="object-right w-1/4 mr-4">
+        <h2 class="text-3xl font-extrabold md:text-4xl lg:text-5xl text-dark-grey-900">
+          <span style="border-color: rgb(217, 217, 227);"></span>How Cache Works?
+        </h2>
+        <p class="text-base font-medium leading-7 text-dark-grey-600">
+          <span style="color: rgb(55,65,81); font-family: 'Sonhe', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+            Cache Bank simplifies sign-up with a user-friendly website, streamlined account options, and an efficient verification process, making banking accessible and hassle-free for developers.
+          </span>
+        </p>
       </div>
-      <h3 class="text-lg font-semibold text-dark-grey-900">Choose Account Type</h3>
-      <p class="text-base font-medium text-dark-grey-600">
-        Select from checking,savings,or developer-specific accounts.
-      </p>
-    </div>
+    
+      <!-- Steps Section with Numbered Circles -->
+        <div class="">
+          <div class="flex items-center justify-center w-12 h-12 rounded-full bg-green-500 mb-2">
+            <span class="text-base font-bold leading-7 text-white">1</span>
+          </div>
+          <h3 class="text-lg font-semibold text-dark-grey-900">Visit Cache Bank Website</h3>
+          <p class="text-base font-medium text-dark-grey-600">
+            Go to Cache Bank,click "Sign-Up" or "Open an Account."
+          </p>
+        </div>
 
-    <div class="flex flex-col items-start gap-1">
-      <div class="flex items-center justify-center w-12 h-12 rounded-full bg-pink-500 mb-2">
-        <span class="text-base font-bold leading-7 text-white">3</span>
+              <div class="">
+          <div class="flex items-center justify-center w-12 h-12 rounded-full bg-pink-500 mb-2">
+            <span class="text-base font-bold leading-7 text-white">2</span>
+          </div>
+          <h3 class="text-lg font-semibold text-dark-grey-900">Choose Account Type</h3>
+          <p class="text-base font-medium text-dark-grey-600">
+            Select from checking,savings,or developer-specific accounts.
+          </p>
+        </div>
+
+              <div class=" ">
+                <div class="flex items-center justify-center w-12 h-12 rounded-full bg-pink-500 mb-2">
+            <span class="text-base font-bold leading-7 text-white">3</span>
+          </div>
+          <h3 class="text-lg font-semibold text-dark-grey-900">Provide Personal Information</h3>
+          <p class="text-base font-medium text-dark-grey-600">
+            Complete the form with your details and identification for security.
+          </p>
+        </div>
+
+            <div class="">
+            <div class="flex items-center justify-center w-12 h-12 rounded-full bg-green-500 mb-2">
+            <span class="text-base font-bold leading-7 text-white">4</span>
+          </div>
+          <h3 class="text-lg font-semibold text-dark-grey-900">Verify and submit</h3>
+          <p class="text-base font-medium text-dark-grey-600">
+            Check your information,agree to terms,submit for account approval.
+          </p>
+        </div>
       </div>
-      <h3 class="text-lg font-semibold text-dark-grey-900">Provide Personal Information</h3>
-      <p class="text-base font-medium text-dark-grey-600">
-        Complete the form with your details and identification for security.
-      </p>
     </div>
-
-    <div class="flex flex-col items-start gap-1">
-      <div class="flex items-center justify-center w-12 h-12 rounded-full bg-green-500 mb-2">
-        <span class="text-base font-bold leading-7 text-white">4</span>
-      </div>
-      <h3 class="text-lg font-semibold text-dark-grey-900">Verify and submit</h3>
-      <p class="text-base font-medium text-dark-grey-600">
-        Check your information,agree to terms,submit for account approval.
-      </p>
-    </div>
-  </div>
-</div>
-
+    
 <!--Componets 5-->
  <!-- Full-width footer container with green background -->
- <div class="w-full">
-  <section class="container flex flex-col items-center gap-6 nb-8">
-    <section class="mt-16 md:mt-32 flex flex-col lg:flex-row lg:justify-center gap-12 items-center">
+ <div class="grid w-full">
+    <section class=" flex flex-wrap  items-center justify-center gap-3 h-full bg-gray-100">
           <!--card-->
             <div class="flex flex-col items-center gap-3 px-8 py-10 bg-white rounded-3xl shadow-main">
             <span>
@@ -505,8 +507,9 @@ collaboration, and sharing insights within the software development industry
                 <p class="text-lg font-bold text-green-500" target="_blank" href="https://www.google.co.za/maps/@-25.8947732,28.1005628,15z?entry=ttu&g_ep=EgoyMDI0MTIwMi4wIKXMDSoASAFQAw%3D%3D">15 Tech Alley,Cape Town</p>
                 </div>
     <!--footer-->
-      <div class="w-full bg-green-500">
-        <div class="container flex flex-col mx-auto">
+
+      <div class=" grid w-full bg-green-500">
+        <div class=" container flex flex-col mx-auto">
           <div class="flex flex-col items-center w-full my-20">
           <div class="flex flex-col items-center gap-6 nb-8">
           <!--socials-->
@@ -549,14 +552,17 @@ collaboration, and sharing insights within the software development industry
                 </svg>
               </a>                
         </div>
+        </div>
 
         <!--Copyright-->
-        <div class="flex items-center">
+        <div class="flex items-center ">
           <p class="text-base font-normal leading-7 text-center">2024 Cache Bank.All rights reserved</p>
         </div>
       </div>
     </div>
-    
+    <script>
+      document.getElementById=(" mobile-menu-toggle").addEventListener("click"), function[] (document.getElementById["mobile-menu"].[classList.toggle])("hidden")
+    </script>
     <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/plugins/countup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/countto.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/plugins/leaflet.js"></script>
